@@ -3,13 +3,15 @@ package mprest.com.example.demo.DAO;
 import mprest.com.example.demo.Entity.RightTriangle;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 import java.util.List;
 
-
 @Transactional
 @Repository
-public interface IShapesRepositoryDao extends JpaRepository<RightTriangle, Integer> {
+public interface ShapeRepository extends JpaRepository<RightTriangle, Integer>, ShapeRepositoryCustom {
+
     @Override
     List<RightTriangle> findAll();
 
@@ -28,4 +30,6 @@ public interface IShapesRepositoryDao extends JpaRepository<RightTriangle, Integ
 
     @Override
     void delete(Integer integer);
+
+
 }

@@ -31,6 +31,11 @@ public class ShapeController {
         return shapeService.getShapeById(id);
     }
 
+    @GetMapping("/state/{state}")
+    public List<RightTriangle> getShapesByState(@PathVariable("state") int state) {
+        return shapeService.getTrianglesByState(state);
+    }
+
     @RequestMapping(value = "/{id}", method=RequestMethod.PUT, consumes = org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
     public RightTriangle updateTriangle(@PathVariable("id") int id, @RequestBody RightTriangle shape)
     {
