@@ -9,6 +9,9 @@ public interface ShapeRepositoryCustom {
     void
     refresh(RightTriangle shape);
 
+    void
+    merge(RightTriangle shape);
+
     List<RightTriangle>
     getTrianglesByState(Integer state);
 }

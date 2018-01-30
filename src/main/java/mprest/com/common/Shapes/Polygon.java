@@ -33,7 +33,7 @@ public abstract class Polygon implements IShape {
     private Integer id;
 
 
-    @ElementCollection
+    @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(
             name="LINES",
             joinColumns=@JoinColumn(name="POLYGON_ID")

@@ -14,11 +14,9 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "RightTriangle")
 public class RightTriangle extends Polygon {
-    final static Integer PRE_CALC = 0;
-    final static Integer POST_CALC = 1;
 
     public RightTriangle() {
-        state = PRE_CALC;
+        state = CalcStates.PRE_CALC.getValue();
     }
 
     @Override
@@ -30,7 +28,7 @@ public class RightTriangle extends Polygon {
             Double line2 = lines.get(1).getLength();
             double hypotenuse = Math.sqrt(line1*line1 + line2*line2);
             addLine(new Line(hypotenuse));
-            state = POST_CALC;
+            state = CalcStates.POST_CALC.getValue();
         }
 
     }

@@ -24,6 +24,12 @@ public class ShapeRepositoryImpl implements ShapeRepositoryCustom {
     }
 
     @Override
+    @Transactional
+    public void merge(RightTriangle shape) {
+        entityManager.merge(shape);
+    }
+
+    @Override
     public List<RightTriangle>
     getTrianglesByState(Integer state) {
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();

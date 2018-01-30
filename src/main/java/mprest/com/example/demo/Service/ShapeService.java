@@ -32,10 +32,14 @@ public class ShapeService {
         return shapeDao.findOne(id);
     }
 
-    // TODO:
     public List<RightTriangle>
     getTrianglesByState(Integer state) {
         return shapeDao.getTrianglesByState(state);
+    }
+
+    public void
+    merge(RightTriangle shape) {
+        shapeDao.merge(shape);
     }
 
     public RightTriangle
