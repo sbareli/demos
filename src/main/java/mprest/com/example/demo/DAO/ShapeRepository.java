@@ -29,6 +29,4 @@ public interface ShapeRepository extends JpaRepository<RightTriangle, Integer>, 
 
     @Override
     void delete(Integer integer);
-
-
 }

@@ -37,8 +37,7 @@ public class ShapeController {
     }
 
     @RequestMapping(value = "/{id}", method=RequestMethod.PUT, consumes = org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
-    public RightTriangle updateTriangle(@PathVariable("id") int id, @RequestBody RightTriangle shape)
-    {
+    public RightTriangle updateTriangle(@PathVariable("id") int id, @RequestBody RightTriangle shape) {
         return shapeService.updateTriangle(id, shape);
     }
 

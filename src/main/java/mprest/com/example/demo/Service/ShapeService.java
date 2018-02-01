@@ -14,7 +14,6 @@ import java.util.Optional;
 public class ShapeService {
 
     @Autowired
-    //@Qualifier("in-memory")
     private ShapeRepository shapeDao;
 
     public List<RightTriangle>
@@ -59,6 +58,7 @@ public class ShapeService {
     public RightTriangle
     createTriangle(RightTriangle shape) {
         return shapeDao.save(shape);
+
     }
 
     public void

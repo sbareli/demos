@@ -41,15 +41,37 @@ Explain how to run the automated tests for this system
 Explain what these tests test and why
 
 ```
-Give an example
+Initial test ran the Data Injector to POST Right Triangles
+in parallel to using Postman for changing entities, and while
+the Async Services were calculating shapes and counting totals. 
 ```
 
 ### And coding style tests
 
-Explain what these tests test and why
+Testing the controller with some Postman request as below:
 
 ```
-Give an example
+# creating triangles
+http://localhost:8080/shapes/rightTriangles
+# using json for body as below
+{
+	"state": 0,
+	"lines": [3.0, 4.0]
+}
+#
+# get all shapes
+http://localhost:8080/shapes/all
+# count
+http://localhost:8080/shapes/count
+# delete
+http://localhost:8080/shapes/100
+# update
+http://localhost:8080/shapes/2
+{
+	"state": 1
+}
+
+
 ```
 
 ## Deployment
@@ -59,28 +81,8 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Bezalel Bareli** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Bezalel Bareli** - *Initial work*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
