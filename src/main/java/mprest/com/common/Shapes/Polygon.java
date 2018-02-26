@@ -16,16 +16,16 @@ import java.util.List;
 public abstract class Polygon implements IShape {
 
     public Polygon() {
-        lines = new ArrayList<>();
+        edges = new ArrayList<>();
     }
 
-    public Polygon(List<Line> lines) {
-        this.lines = new ArrayList<>(lines);
+    public Polygon(List<Edge> lines) {
+        edges = new ArrayList<>(lines);
     }
 
-    public int addLine(Line line) {
-        lines.add(line);
-        return lines.size();
+    public int addLine(Edge line) {
+        edges.add(line);
+        return edges.size();
     }
 
     @Id
@@ -35,8 +35,8 @@ public abstract class Polygon implements IShape {
 
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(
-            name="LINES",
+            name="EDGES",
             joinColumns=@JoinColumn(name="POLYGON_ID")
     )
-    private List<Line> lines;
+    private List<Edge> edges;
 }

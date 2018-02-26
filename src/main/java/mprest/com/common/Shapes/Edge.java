@@ -4,17 +4,18 @@ import lombok.Getter;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.Table;
 
 @Getter
 @Embeddable
-final public class Line {
+final public class Edge {
 
 
-    private Line() {
+    private Edge() {
         length = 0.;
     }
 
-    public Line(Double length) {
+    public Edge(Double length) {
         this.length = length;
     }
 
@@ -22,13 +23,13 @@ final public class Line {
     public boolean equals(Object other) {
         if (other == this) return true;
 
-        if (other instanceof Line) {
-            Line line = (Line)other;
+        if (other instanceof Edge) {
+            Edge line = (Edge) other;
             return (line.length == length);
         }
         return false;
     }
 
-    @Column(name = "Line")
+    @Column(name = "Edge")
     private Double length;
 }

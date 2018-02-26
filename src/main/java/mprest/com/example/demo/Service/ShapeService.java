@@ -48,8 +48,8 @@ public class ShapeService {
         if (shape.isPresent()) {
             shape.get().setState(updatedShape.getState());
 
-            if (!updatedShape.getLines().isEmpty())
-                shape.get().setLines(updatedShape.getLines());
+            if (!updatedShape.getEdges().isEmpty())
+                shape.get().setEdges(updatedShape.getEdges());
         }
 
         return shape.get();
