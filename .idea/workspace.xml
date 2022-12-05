@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d2473a2-fcd4-4136-b81d-19b25642ffa2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/common/Shapes/IShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/common/Shapes/IShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/DAO/ShapeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/DAO/ShapeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Service/ShapeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Service/ShapeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Config/CustomAsyncExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Config/CustomAsyncExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +24,10 @@
   </component>
   <component name="ProjectId" id="2IT5EfIJBl2duQDaTQxj59GeNeL" />
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -65,7 +68,8 @@
       <workItem from="1670192627653" duration="2688000" />
       <workItem from="1670231785897" duration="1109000" />
       <workItem from="1670233147182" duration="1831000" />
-      <workItem from="1670236769687" duration="147000" />
+      <workItem from="1670236769687" duration="539000" />
+      <workItem from="1670238265570" duration="2273000" />
     </task>
     <servers />
   </component>
@@ -84,5 +88,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mprest/com/example/demo/DemoApplication.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
