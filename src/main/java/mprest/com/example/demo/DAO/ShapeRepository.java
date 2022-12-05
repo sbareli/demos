@@ -18,7 +18,7 @@ public interface ShapeRepository extends JpaRepository<RightTriangle, Integer>, 
     long count();
 
     @Override
-    RightTriangle findOne(Integer integer);
+    RightTriangle getOne(Integer integer);
 
     /*
         update or create new.
@@ -28,5 +28,5 @@ public interface ShapeRepository extends JpaRepository<RightTriangle, Integer>, 
     RightTriangle save(RightTriangle s);
 
     @Override
-    void delete(Integer integer);
+    void deleteById(Integer integer);
 }

@@ -28,7 +28,7 @@ public class ShapeService {
 
     public RightTriangle
     getShapeById(Integer id) {
-        return shapeDao.findOne(id);
+        return shapeDao.getOne(id);
     }
 
     public List<RightTriangle>
@@ -63,6 +63,6 @@ public class ShapeService {
 
     public void
     deleteTriangle(Integer id) {
-        shapeDao.delete(id);
+        shapeDao.deleteById(id);
     }
 }
