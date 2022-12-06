@@ -1,17 +1,17 @@
 package mprest.com.example.demo.Controller;
 
-import brave.Tracer;
+import io.opentracing.Tracer;
 import mprest.com.example.demo.Entity.RightTriangle;
 import mprest.com.example.demo.Service.ShapeService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/shapes")
@@ -53,7 +53,15 @@ public class ShapeController {
     }
 
     @RequestMapping(value = "/rightTriangles", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public RightTriangle createTriangle(@RequestBody RightTriangle shape) {
+    public RightTriangle createTriangle(@RequestBody RightTriangle shape, @RequestHeader Map<String,String> headers) {
+
+    	log.info("Inside /rightTriangles");
+    	log.info("Span: " + fTracer.activeSpan().context().toSpanId());
+
+    	headers.forEach( (k,v) -> {
+    		log.info("Header '{}' = {}", k, v);
+	    });
+
         return shapeService.createTriangle(shape);
     }
 
