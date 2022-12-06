@@ -58,7 +58,6 @@ public class ShapeService {
     public RightTriangle
     createTriangle(RightTriangle shape) {
         return shapeDao.save(shape);
-
     }
 
     public void
