@@ -1,6 +1,6 @@
 # Project Title
 
-MPrest Programming Test
+Micros service with async play ground 
 
 ## Getting Started
 
@@ -56,7 +56,7 @@ http://localhost:8080/shapes/rightTriangles
 # using json for body as below
 {
 	"state": 0,
-	"lines": [3.0, 4.0]
+	"edges": [3.0, 4.0]
 }
 #
 # get all shapes
