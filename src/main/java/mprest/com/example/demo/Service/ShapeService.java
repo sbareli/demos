@@ -1,5 +1,7 @@
 package mprest.com.example.demo.Service;
 
+import io.opentelemetry.instrumentation.annotations.WithSpan;
+import io.opentracing.Span;
 import mprest.com.example.demo.DAO.ShapeRepository;
 import mprest.com.example.demo.Entity.RightTriangle;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,9 +57,18 @@ public class ShapeService {
         return shape.get();
     }
 
+    /*
+        @WithSpan seems to only work with automatic instrumentation of java application using agent
+        https://github.com/open-telemetry/opentelemetry-java-instrumentation
+     */
+    @WithSpan
     public RightTriangle
-    createTriangle(RightTriangle shape) {
+    createTriangle(RightTriangle shape, Span span) {
+
+    	span.setOperationName("createTriangle-Operation");
+    	span.setTag("Operation", "createTriangle");
         return shapeDao.save(shape);
+
     }
 
     public void

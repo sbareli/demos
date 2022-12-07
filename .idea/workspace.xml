@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Controller/ShapeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Controller/ShapeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Entity/RightTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Entity/RightTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Service/ShapeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Service/ShapeService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +73,7 @@
       <workItem from="1670236769687" duration="539000" />
       <workItem from="1670238265570" duration="7950000" />
       <workItem from="1670252043990" duration="1765000" />
-      <workItem from="1670317902363" duration="12736000" />
+      <workItem from="1670317902363" duration="19459000" />
     </task>
     <servers />
   </component>
@@ -98,21 +100,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/mprest/com/example/demo/DemoApplication.java</url>
           <line>30</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Service/ShapeService.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Entity/RightTriangle.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Entity/RightTriangle.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

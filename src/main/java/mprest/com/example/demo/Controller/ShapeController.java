@@ -1,5 +1,6 @@
 package mprest.com.example.demo.Controller;
 
+import io.opentracing.Span;
 import io.opentracing.Tracer;
 import mprest.com.example.demo.Entity.RightTriangle;
 import mprest.com.example.demo.Service.ShapeService;
@@ -55,14 +56,18 @@ public class ShapeController {
     @RequestMapping(value = "/rightTriangles", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public RightTriangle createTriangle(@RequestBody RightTriangle shape, @RequestHeader Map<String,String> headers) {
 
-    	log.info("Inside /rightTriangles");
-    	log.info("Span: " + fTracer.activeSpan().context().toSpanId());
+	    Span span = fTracer.activeSpan();
+
+	    log.info("Inside /rightTriangles");
+    	log.info("Span: " + span.context().toSpanId());
 
     	headers.forEach( (k,v) -> {
     		log.info("Header '{}' = {}", k, v);
 	    });
 
-        return shapeService.createTriangle(shape);
+    	span.log(shape.toString());
+
+        return shapeService.createTriangle(shape, span);
     }
 
     @DeleteMapping("/{id}")

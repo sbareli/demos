@@ -33,6 +33,11 @@ public class RightTriangle extends Polygon {
 
     }
 
+    @Override
+    public String toString() {
+    	return String.format("RightTriangle: calculation state {%s}", state.toString());
+    }
+
     @NotNull
     @Column(nullable = false)
     private Integer state;
