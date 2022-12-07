@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d2473a2-fcd4-4136-b81d-19b25642ffa2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Components/ShapeConstraint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/AsyncServices/AsyncServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/AsyncServices/AsyncServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Controller/ShapeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Controller/ShapeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Entity/RightTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Entity/RightTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Service/ShapeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Service/ShapeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/common/Shapes/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/common/Shapes/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/common/Shapes/IShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/common/Shapes/IShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/common/Shapes/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/common/Shapes/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/common/Shapes/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/common/Shapes/Polygon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/AsyncServices/AsyncServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/AsyncServices/AsyncServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Components/ShapeConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/Components/ShapeConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Config/CustomAsyncExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/Config/CustomAsyncExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Controller/ShapeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/Controller/ShapeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/DAO/ShapeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/DAO/ShapeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/DAO/ShapeRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/DAO/ShapeRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/DAO/ShapeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/DAO/ShapeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Entity/RightTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/Entity/RightTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mprest/com/example/demo/Service/ShapeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basix/com/example/demo/Service/ShapeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mprest/com/example/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basix/com/example/demo/DemoApplicationTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +73,8 @@
   <component name="RunManager">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="mprest.com.example.demo.DemoApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="basix.com.example.demo.DemoApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,7 +94,7 @@
       <workItem from="1670238265570" duration="7950000" />
       <workItem from="1670252043990" duration="1765000" />
       <workItem from="1670317902363" duration="20245000" />
-      <workItem from="1670404822477" duration="11865000" />
+      <workItem from="1670404822477" duration="13230000" />
     </task>
     <servers />
   </component>
