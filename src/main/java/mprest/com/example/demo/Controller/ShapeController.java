@@ -1,7 +1,9 @@
 package mprest.com.example.demo.Controller;
 
+import io.opentelemetry.instrumentation.annotations.WithSpan;
 import io.opentracing.Span;
 import io.opentracing.Tracer;
+import mprest.com.example.demo.Components.ShapeConstraint;
 import mprest.com.example.demo.Entity.RightTriangle;
 import mprest.com.example.demo.Service.ShapeService;
 
@@ -26,28 +28,35 @@ public class ShapeController {
     @Autowired
     private ShapeService shapeService ;
 
+    @Autowired
+    private ShapeConstraint fShapeConstraint;
+
     @GetMapping("/all")
     public List<RightTriangle>
     getAllShapes() {
         return shapeService.getAllShapes();
     }
 
+	@WithSpan
     @GetMapping("/count")
     public Long
     getAllShapesCount() {
         return shapeService.getAllShapesCount();
     }
 
+	@WithSpan
     @GetMapping("/{id}")
     public RightTriangle getShapeById(@PathVariable("id") int id) {
         return shapeService.getShapeById(id);
     }
 
+	@WithSpan
     @GetMapping("/state/{state}")
     public List<RightTriangle> getShapesByState(@PathVariable("state") int state) {
         return shapeService.getTrianglesByState(state);
     }
 
+	@WithSpan
     @RequestMapping(value = "/{id}", method=RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
     public RightTriangle updateTriangle(@PathVariable("id") int id, @RequestBody RightTriangle shape) {
         return shapeService.updateTriangle(id, shape);
@@ -67,7 +76,11 @@ public class ShapeController {
 
     	span.log(shape.toString());
 
-        return shapeService.createTriangle(shape, span);
+        RightTriangle rightTriangle  = shapeService.createTriangle(shape, span);
+
+        fShapeConstraint.verify(span);
+
+        return rightTriangle;
     }
 
     @DeleteMapping("/{id}")

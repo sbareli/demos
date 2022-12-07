@@ -35,7 +35,8 @@ public class RightTriangle extends Polygon {
 
     @Override
     public String toString() {
-    	return String.format("RightTriangle: calculation state {%s}", state.toString());
+    	return String.format("RightTriangle: calculation state {%s}, Id {%d}, edges {%d}",
+			    state.toString(), getId(), getEdges().size());
     }
 
     @NotNull

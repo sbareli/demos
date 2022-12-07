@@ -1,5 +1,6 @@
 package mprest.com.example.demo.AsyncServices;
 
+import io.opentracing.Tracer;
 import mprest.com.common.Shapes.IShape;
 import mprest.com.example.demo.Entity.RightTriangle;
 import mprest.com.example.demo.Service.ShapeService;
