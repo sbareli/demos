@@ -31,6 +31,7 @@ public class ShapeController {
     @Autowired
     private ShapeConstraint fShapeConstraint;
 
+	@WithSpan
     @GetMapping("/all")
     public List<RightTriangle>
     getAllShapes() {
