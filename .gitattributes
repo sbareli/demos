@@ -1,1 +1,2 @@
 out/artifacts/demo-0.0.1-SNAPSHOT.jar filter=lfs diff=lfs merge=lfs -text
+out/artifacts/jaeger-1.39.0-darwin-amd64.tar.gz filter=lfs diff=lfs merge=lfs -text
